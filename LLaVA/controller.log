@@ -1,0 +1,48 @@
+2025-02-01 10:53:49 | INFO | controller | args: Namespace(host='0.0.0.0', port=10000, dispatch_method='shortest_queue')
+2025-02-01 10:53:49 | INFO | controller | Init controller
+2025-02-01 10:53:49 | ERROR | stderr | [32mINFO[0m:     Started server process [[36m2956[0m]
+2025-02-01 10:53:49 | ERROR | stderr | [32mINFO[0m:     Waiting for application startup.
+2025-02-01 10:53:49 | ERROR | stderr | [32mINFO[0m:     Application startup complete.
+2025-02-01 10:53:49 | ERROR | stderr | [32mINFO[0m:     Uvicorn running on [1mhttp://0.0.0.0:10000[0m (Press CTRL+C to quit)
+2025-02-01 10:54:05 | INFO | stdout | [32mINFO[0m:     127.0.0.1:58275 - "[1mPOST /refresh_all_workers HTTP/1.1[0m" [32m200 OK[0m
+2025-02-01 10:54:07 | INFO | stdout | [32mINFO[0m:     127.0.0.1:58278 - "[1mPOST /list_models HTTP/1.1[0m" [32m200 OK[0m
+2025-02-01 10:55:11 | INFO | stdout | [32mINFO[0m:     127.0.0.1:58326 - "[1mGET / HTTP/1.1[0m" [31m404 Not Found[0m
+2025-02-01 10:55:11 | INFO | stdout | [32mINFO[0m:     127.0.0.1:58326 - "[1mGET /favicon.ico HTTP/1.1[0m" [31m404 Not Found[0m
+2025-02-01 10:56:54 | INFO | stdout | [32mINFO[0m:     127.0.0.1:58377 - "[1mPOST /refresh_all_workers HTTP/1.1[0m" [32m200 OK[0m
+2025-02-01 10:56:56 | INFO | stdout | [32mINFO[0m:     127.0.0.1:58380 - "[1mPOST /list_models HTTP/1.1[0m" [32m200 OK[0m
+2025-02-01 11:05:04 | INFO | stdout | [32mINFO[0m:     127.0.0.1:58780 - "[1mPOST /refresh_all_workers HTTP/1.1[0m" [32m200 OK[0m
+2025-02-01 11:05:06 | INFO | stdout | [32mINFO[0m:     127.0.0.1:58782 - "[1mPOST /list_models HTTP/1.1[0m" [32m200 OK[0m
+2025-02-01 11:06:27 | ERROR | stderr | [32mINFO[0m:     Shutting down
+2025-02-01 11:06:27 | ERROR | stderr | [32mINFO[0m:     Finished server process [[36m2956[0m]
+2025-02-01 11:06:27 | ERROR | stderr | [31mERROR[0m:    Traceback (most recent call last):
+2025-02-01 11:06:27 | ERROR | stderr |   File "C:\Users\Wisnia\AppData\Local\Programs\Python\Python310\lib\asyncio\runners.py", line 44, in run
+2025-02-01 11:06:27 | ERROR | stderr |     return loop.run_until_complete(main)
+2025-02-01 11:06:27 | ERROR | stderr |   File "C:\Users\Wisnia\AppData\Local\Programs\Python\Python310\lib\asyncio\base_events.py", line 628, in run_until_complete
+2025-02-01 11:06:27 | ERROR | stderr |     self.run_forever()
+2025-02-01 11:06:27 | ERROR | stderr |   File "C:\Users\Wisnia\AppData\Local\Programs\Python\Python310\lib\asyncio\windows_events.py", line 316, in run_forever
+2025-02-01 11:06:27 | ERROR | stderr |     super().run_forever()
+2025-02-01 11:06:27 | ERROR | stderr |   File "C:\Users\Wisnia\AppData\Local\Programs\Python\Python310\lib\asyncio\base_events.py", line 595, in run_forever
+2025-02-01 11:06:27 | ERROR | stderr |     self._run_once()
+2025-02-01 11:06:27 | ERROR | stderr |   File "C:\Users\Wisnia\AppData\Local\Programs\Python\Python310\lib\asyncio\base_events.py", line 1881, in _run_once
+2025-02-01 11:06:27 | ERROR | stderr |     handle._run()
+2025-02-01 11:06:27 | ERROR | stderr |   File "C:\Users\Wisnia\AppData\Local\Programs\Python\Python310\lib\asyncio\events.py", line 80, in _run
+2025-02-01 11:06:27 | ERROR | stderr |     self._context.run(self._callback, *self._args)
+2025-02-01 11:06:27 | ERROR | stderr |   File "C:\Users\Wisnia\AppData\Local\Programs\Python\Python310\lib\site-packages\uvicorn\server.py", line 69, in serve
+2025-02-01 11:06:27 | ERROR | stderr |     with self.capture_signals():
+2025-02-01 11:06:27 | ERROR | stderr |   File "C:\Users\Wisnia\AppData\Local\Programs\Python\Python310\lib\contextlib.py", line 142, in __exit__
+2025-02-01 11:06:27 | ERROR | stderr |     next(self.gen)
+2025-02-01 11:06:27 | ERROR | stderr |   File "C:\Users\Wisnia\AppData\Local\Programs\Python\Python310\lib\site-packages\uvicorn\server.py", line 330, in capture_signals
+2025-02-01 11:06:27 | ERROR | stderr |     signal.raise_signal(captured_signal)
+2025-02-01 11:06:27 | ERROR | stderr | KeyboardInterrupt
+2025-02-01 11:06:27 | ERROR | stderr | 
+2025-02-01 11:06:27 | ERROR | stderr | During handling of the above exception, another exception occurred:
+2025-02-01 11:06:27 | ERROR | stderr | 
+2025-02-01 11:06:27 | ERROR | stderr | Traceback (most recent call last):
+2025-02-01 11:06:27 | ERROR | stderr |   File "C:\Users\Wisnia\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\routing.py", line 700, in lifespan
+2025-02-01 11:06:27 | ERROR | stderr |     await receive()
+2025-02-01 11:06:27 | ERROR | stderr |   File "C:\Users\Wisnia\AppData\Local\Programs\Python\Python310\lib\site-packages\uvicorn\lifespan\on.py", line 137, in receive
+2025-02-01 11:06:27 | ERROR | stderr |     return await self.receive_queue.get()
+2025-02-01 11:06:27 | ERROR | stderr |   File "C:\Users\Wisnia\AppData\Local\Programs\Python\Python310\lib\asyncio\queues.py", line 159, in get
+2025-02-01 11:06:27 | ERROR | stderr |     await getter
+2025-02-01 11:06:27 | ERROR | stderr | asyncio.exceptions.CancelledError
+2025-02-01 11:06:27 | ERROR | stderr | 
